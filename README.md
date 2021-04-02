@@ -1,3 +1,20 @@
+
+# Deploy a React Parse Sample
+
+How to run a [parse react sample](https://github.com/clevercloud-parse-server/react-integration) on [Clever CLoud](https://clever-cloud.com/).
+
+Assuming you have [clever-tools](https://www.clever-cloud.com/doc/getting-started/cli/) installed and configured:
+
+```
+clever create --type node myParseClient
+clever service link-app myParseServer
+clever env set CC_POST_BUILD_HOOK 'npm run build'
+clever env set CC_RUN_COMMAND 'npx serve -s ./build -p 8080'
+```
+
+
+# React Documentation
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
