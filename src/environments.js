@@ -1,5 +1,5 @@
 module.exports = {
-    APPLICATION_ID: process.env.PARSE_APP_ID,
-    JAVASCRIPT_KEY: process.env.APP_JAVASCRIPT_KEY,
-    SERVER_URL: process.env.SERVER_URL
+    APPLICATION_ID: "MyTest",
+    JAVASCRIPT_KEY: "JAVASCRIPT_KEY",
+    SERVER_URL: "https://ldoguin-parse.cleverapps.io/parse"
 }
